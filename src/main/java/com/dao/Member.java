@@ -14,16 +14,16 @@ public class Member {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID")
-	private Integer id;
-	
+	private String id;
+
 	@Column(name = "NAME")
 	private String name;
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -34,6 +34,5 @@ public class Member {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
 }

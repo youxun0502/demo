@@ -7,9 +7,15 @@
 </head>
 
 <body>
-	<h1>Hello world!!!</h1>
+	<div th:replace="~{nav}"></div>
+	<form onsubmit="event.preventDefault()">
+		<label for="account">帳號</label><input type="text" id="account" name="account">
+		<label for="password">密碼</label><input type="password" id="password" name="password">
+		<button>登入</button>
+	</form>
 </body>
 
+<script th:src="@{/js/home.js}"></script>
 
 
 </html>
